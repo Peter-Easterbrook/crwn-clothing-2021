@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { auth } from '../../firebase/firebase.utils';
-import CartIcon from '../cart-icon/cart-icon.component';
-import CartDropdown from '../cart-dropdown/cart-dropdown.component';
+import { default as CartIcon } from '../cart-icon/cart-icon.container';
+import { default as CartDropdown } from '../cart-dropdown/cart-dropdown.container';
 import CurrentUserContext from '../../contexts/current-user/current-user.context';
 import { CartContext } from '../../providers/cart/cart.provider';
 import { GiLaurelCrown } from 'react-icons/gi';

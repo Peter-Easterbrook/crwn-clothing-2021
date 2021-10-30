@@ -6,7 +6,7 @@ import CartItem from '../cart-item/cart-item.component';
 import { CartContext } from '../../providers/cart/cart.provider';
 import './cart-dropdown.styles.scss';
 
-const CartDropdown = ({ history }) => {
+const CartDropdown = ({ history, toggleCartHidden }) => {
   const { cartItems, toggleHidden } = useContext(CartContext);
   return (
     <div className='cart-dropdown'>
