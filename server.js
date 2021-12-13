@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const compression = require('compression');
 const enforce = require('express-sslify');
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
 
 app.use(cors());
 app.use(express.json());
@@ -19,8 +21,8 @@ app.listen(5001, () => console.log('Server Running'));
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'peter.easterbrook@gmail.com',
-    pass: 'nmyzhehobakfeonc',
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS,
   },
 });
 
