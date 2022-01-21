@@ -15,7 +15,7 @@ import {
   OptionDiv,
   OptionLink,
 } from './header.styles';
-import './header.styles.scss';
+// import './header.styles.scss';
 
 const Header = () => {
   const currentUser = useContext(CurrentUserContext);
@@ -25,7 +25,7 @@ const Header = () => {
     <HeaderContainer>
       <CompanyLogoContainer>
         <CompanyContainer>CRWN</CompanyContainer>
-        <LogoContainer to='/'>
+        <LogoContainer to='/' alt='crown logo'>
           <GiLaurelCrown />
         </LogoContainer>
         <CompanyContainer>Clothing Inc.</CompanyContainer>
