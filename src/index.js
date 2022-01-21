@@ -4,8 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import CartProvider from './providers/cart/cart.provider';
 import App from './App';
 
-import * as serviceWorker from './serviceWorker';
-
 ReactDOM.render(
   <CartProvider>
     <BrowserRouter>
@@ -14,5 +12,3 @@ ReactDOM.render(
   </CartProvider>,
   document.getElementById('root')
 );
-
-serviceWorker.register();

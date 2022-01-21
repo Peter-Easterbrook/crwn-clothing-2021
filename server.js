@@ -18,10 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.listen(5001, () => console.log('Server Running'));
 
-app.get('/serviceWorker.js', (req, res) => {
-  res.sendFile(__dirname, '..', 'build', 'serviceWorker.js');
-});
-
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
